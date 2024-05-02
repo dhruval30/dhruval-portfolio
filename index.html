@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dhruval Padia's Personal Portfolio">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" sizes="16x16">
+    <link rel="alternate icon" href="images/favicon.ico" type="image/icon" sizes="16x16">
+    <title>Dhruval Padia</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body class="container">
+    <div class="landing-screen">
+        <div id="theme-switch" class="switch-container">
+            <div class="sun"></div>
+            <label class="switch">
+                <input type="checkbox" id="themeSwitch" aria-label="Theme switch">
+                <span class="slider round"></span>
+            </label>
+            <div class="moon"></div>
+        </div>
+
+        <section id="home" class="home">
+            <p class="home-greeting">Hello!</p>
+            <h1 class="home-text">
+                I'm <span class="my-name">Dhruval Padia</span>. <br> BTech 26' - Computer Science<br><br>Obsessed with All Things Tech
+            </h1>
+            <div class="home-icon-container">
+                <a class="home-social-icon email-icon" aria-label="Email" href="mailto:padiadhruval@gmail.com"></a>
+                <a class="home-social-icon linkedin-icon" aria-label="Linkedin" href="https://www.linkedin.com/in/dhruvalpadia" target="_blank" rel="noopener noreferrer"></a>
+                <a class="home-social-icon github-icon" aria-label="Github" href="https://github.com/dhruval30" target="_blank" rel="noopener noreferrer"></a>
+            </div>
+            <a class="download-btn" href="putithere" download>
+                <img class="download-btn-icon" src="images/cloud-download.svg" alt="Download">Resume
+            </a>
+        </section>
+    </div>
+
+
+    <section id="about" class="section-container">
+        <h2 class="section-heading">About Me</h2>
+        <div style="padding: 10px;">
+            <p class="about-paragraph">
+                An aspiring code connoisseur with a love for all things code! 
+                As a CS student, you can always find me deep in projects, exploring new frameworks, new algorithms.
+            </p>
+            <p class="about-paragraph">
+                My days are spent tinkering with code, pushing the limits of what's possible, and discovering latest technologies. 
+                I'm drawn to exploring cutting-edge technologies and tools, always seeking out opportunities to learn and grow. 
+            </p>
+            <p>
+                My passion for coding drives me to continuously expand my knowledge and take on challenging projects. 
+                I enjoy collaborating with others to brainstorm innovative solutions and share insights. 
+                Let's connect and geek out about the exciting world of technology!
+            </p>
+        </div>
+    </section>
+
+
+    <section id="skills" class="section-container">
+        <h2 class="section-heading">Skills</h2>
+        <div style="padding: 10px;display: flex;">
+            <div style="width: 250px;">
+                <h3 class="skill-heading">Technologies</h3>
+                <div class="skill">Python</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">Java</div>
+                <div class="skill">NodeJS/ExpressJS</div>
+                <div class="skill">Flask/Django</div>
+                <div class="skill">PyTorch/Tensorflow</div>
+                <div class="skill">Database Management</div>
+                <div class="skill">MongoDB</div>
+            </div>
+            <div>
+                <h3 class="skill-heading">Tools</h3>
+                <div class="skill">AWS</div>
+                <div class="skill">Git & Github</div>
+                <div class="skill">Chrome-DevTools</div>
+                <div class="skill">Bash</div>
+                <div class="skill">VS Code</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience-new" class="section-container">
+        <h2 class="section-heading">Projects</h2>
+        <div class="tab-and-content-container">
+            <div class="tab">
+                <button class="tab-links" onclick="openTab(event, 'Tab1')" id="defaultOpen">SpeakSync</button>
+                <button class="tab-links" onclick="openTab(event, 'Tab2')">GitChat</button>
+                <button class="tab-links" onclick="openTab(event, 'Tab3')">DocDialog</button>
+                <button class="tab-links" onclick="openTab(event, 'Tab4')">EventNet</button>
+                <button class="tab-links" onclick="openTab(event, 'Tab5')">WitWeb</button>
+                <button class="tab-links" onclick="openTab(event, 'Tab6')">InsureIt</button>
+            </div>
+            
+            <div class="tab-content-wrapper">
+                <!-- SpeakSync -->
+                <div id="Tab1" class="tab-content">
+                    <div>
+                        <p class="designation"><span class="section-item-name job-company">SpeakSync</span></p>
+                        <div class="job-duration">Current Project</div>                
+                    </div>
+                    <br>
+                    <ul class="section-item-description">
+                        <li>Offers real-time speech translation for multilingual meetings, enhancing global collaboration and communication.</li>
+                        <li>Innovative technology that translates spoken language in real-time and synchronizes it with visual cues such as lip movements for seamless interactions.</li>
+                        <li>Provides an intuitive and natural communication experience across different languages, making international meetings more efficient and inclusive.</li>
+                    </ul>
+                </div>
+            
+                <!-- GitChat -->
+                <div id="Tab2" class="tab-content">
+                    <div>
+                        <p class="designation"><span class="section-item-name job-company">GitChat</span></p>
+                        <div class="job-duration">Past Project</div>                
+                    </div>
+                    <br>
+                    <ul class="section-item-description">
+                        <li>Utilizes GitHub API and OpenAI API to enable users to interact conversationally with their GitHub repositories.</li>
+                        <li>Provides developers with insights and answers about their codebases, enhancing understanding and collaboration.</li>
+                        <li>Facilitates natural language queries to streamline the code review process and improve developer productivity.</li>
+                    </ul>
+                </div>
+            
+                <!-- DocDialog -->
+                <div id="Tab3" class="tab-content">
+                    <div>
+                        <p class="designation"><span class="section-item-name job-company">DocDialog</span></p>
+                        <div class="job-duration">Ongoing Project</div>                
+                    </div>
+                    <br>
+                    <ul class="section-item-description">
+                        <li>Allows users to upload and interact with PDF, CSV, or JSON documents using natural language.</li>
+                        <li>Leverages advanced AI to perform data analysis tasks, answering user queries about their data and documents.</li>
+                        <li>Improving data analysis capabilities and expanding functionality for more complex document interactions.</li>
+                    </ul>
+                </div>
+            
+                <!-- EventNet -->
+                <div id="Tab4" class="tab-content">
+                    <div>
+                        <p class="designation"><span class="section-item-name job-company">EventNet</span></p>
+                        <div class="job-duration">Past Project</div>                
+                    </div>
+                    <br>
+                    <ul class="section-item-description">
+                        <li>Enables networking at events through secure authentication and user-friendly login processes.</li>
+                        <li>Features a MongoDB database to manage user credentials and LinkedIn profile URLs for effective matching.</li>
+                        <li>Employs web scraping to extract keywords from LinkedIn profiles, offering efficient user networking and matching.</li>
+                    </ul>
+                </div>
+            
+                <!-- WitWeb -->
+                <div id="Tab5" class="tab-content">
+                    <div>
+                        <p class="designation"><span class="section-item-name job-company">WitWeb</span></p>
+                        <div class="job-duration">Past Project</div>                
+                    </div>
+                    <br>
+                    <ul class="section-item-description">
+                        <li>Combines advanced NLP models such as OpenAI, Llama2, and Mistral for text analysis and similarity checking.</li>
+                        <li>Utilizes Beautiful Soup for web scraping to fetch and filter relevant research papers based on user topics.</li>
+                        <li>Employs a similarity algorithm to identify and present the most relevant and high-quality articles to users.</li>
+                    </ul>
+                </div>
+            
+                <!-- InsureIt -->
+                <div id="Tab6" class="tab-content">
+                    <div>
+                        <p class="designation"><span class="section-item-name job-company">InsureIt</span></p>
+                        <div class="job-duration">Past Project</div>                
+                    </div>
+                    <br>
+                    <ul class="section-item-description">
+                        <li>Incorporates advanced machine learning algorithms to predict the ideal insurance policies for users based on their age, history, and habits.</li>
+                        <li>Uses MongoDB to manage and store a comprehensive database of available insurance plans for efficient access and analysis.</li>
+                        <li>Tailors insurance plan recommendations to each user's unique profile to help them avoid overpaying and choose the most cost-effective options.</li>
+                    </ul>
+                </div>                
+            </div>
+    </section>
+    
+
+
+    <section id="education" class="section-container">
+        <h2 class="section-heading">Education</h2>
+        <div style="padding: 20px 10px;">
+            <div class="section-item-header">
+                <h3 class="section-item-name">B.Tech in Computer Science & Engineering</h3>
+                <div>2026</div>
+            </div>
+            <p class="designation">Woxsen University</p>
+        </div>
+    </section>
+    
+
+    <footer class="footer">
+        <p class="developer-credit">Developed By Dhruval Padia ❤️</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
