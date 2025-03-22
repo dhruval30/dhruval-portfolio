@@ -4,203 +4,417 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dhruval Padia's Portfolio">
+    <meta name="description" content="Dhruval Padia - Computer Science Portfolio">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-
-    <title>Dhruval Padia</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Dhruval Padia | Software Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body class="container">
-    <div class="landing-screen">
-        <div id="theme-switch" class="switch-container">
-            <div class="sun"></div>
-            <label class="switch">
-                <input type="checkbox" id="themeSwitch" aria-label="Theme switch">
-                <span class="slider round"></span>
-            </label>
-            <div class="moon"></div>
-        </div>
-
-        <section id="home" class="home">
-            <p class="home-greeting">Hello!</p>
-            <h1 class="home-text">
-                I'm <span class="my-name">Dhruval Padia</span>. <br> BTech 26' - Computer Science<br><br>Obsessed with All Things Tech
-            </h1>
-            <div class="home-icon-container">
-                <a class="home-social-icon email-icon" aria-label="Email" href="mailto:padiadhruval@gmail.com"></a>
-                <a class="home-social-icon linkedin-icon" aria-label="Linkedin" href="https://www.linkedin.com/in/dhruvalpadia" target="_blank" rel="noopener noreferrer"></a>
-                <a class="home-social-icon github-icon" aria-label="Github" href="https://github.com/dhruval30" target="_blank" rel="noopener noreferrer"></a>
+    <header>
+        <nav class="navbar">
+            <div class="logo">DP</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+            <div id="theme-switch" class="switch-container">
+                <div class="sun"></div>
+                <label class="switch">
+                    <input type="checkbox" id="themeSwitch" aria-label="Theme switch">
+                    <span class="slider round"></span>
+                </label>
+                <div class="moon"></div>
             </div>
-            <a class="download-btn" href="latestCV.pdf" download>
-                <img class="download-btn-icon" src="images/cloud-download.svg" alt="Download">Resume
-            </a>
+        </nav>
+    </header>
+
+    <div class="landing-screen">
+        <section id="home" class="home">
+            <div class="home-content">
+                <p class="home-greeting">Hello, I'm</p>
+                <h1 class="home-text">
+                    <span class="my-name">Dhruval Padia</span>
+                </h1>
+                <p class="home-subtitle">Software Developer | BTech CS '26</p>
+                <p class="home-description">
+                    Passionate about creating innovative solutions with tech. Focused on developing scalable products with modern technologies.
+                </p>
+                <div class="home-icon-container">
+                    <a class="home-social-icon" aria-label="Email" href="mailto:padiadhruval@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a class="home-social-icon" aria-label="Linkedin" href="https://www.linkedin.com/in/dhruvalpadia" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="home-social-icon" aria-label="Github" href="https://github.com/dhruval30" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a class="home-social-icon" aria-label="Website" href="https://dhruvalpadia.site" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-globe"></i>
+                    </a>
+                </div>
+                <div class="cta-buttons">
+                    <a class="primary-btn" href="#projects">View Projects</a>
+                    <a class="secondary-btn" href="latestCV.pdf" download>
+                        <i class="fas fa-download"></i> Resume
+                    </a>
+                </div>
+            </div>
+            
         </section>
     </div>
 
-
     <section id="about" class="section-container">
-        <h2 class="section-heading">About Me</h2>
-        <div style="padding: 10px;">
-            <p class="about-paragraph">
-                An aspiring code connoisseur with a love for all things code! 
-                As a CS student, you can always find me deep in projects, exploring new frameworks, new algorithms.
-            </p>
-            <p class="about-paragraph">
-                My days are spent tinkering with code, pushing the limits of what's possible, and discovering latest technologies. 
-                I'm drawn to exploring cutting-edge technologies and tools, always seeking out opportunities to learn and grow. 
-            </p>
-            <p>
-                My passion for coding drives me to continuously expand my knowledge and take on challenging projects. 
-                I enjoy collaborating with others to brainstorm innovative solutions and share insights. 
-                Let's connect and geek out about the exciting world of technology!
-            </p>
+        <div class="section-header">
+            <h2 class="section-heading">About Me</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p class="about-paragraph">
+                    A highly motivated student with a strong focus on computer science, software development, algorithms,
+                    and emerging technologies. Experienced in working on complex projects, exploring new frameworks,
+                    and implementing innovative solutions.
+                </p>
+                <p class="about-paragraph">
+                    My days are spent tinkering with code, pushing the limits of what's possible, and discovering latest technologies. 
+                    I'm drawn to exploring cutting-edge technologies and tools, always seeking out opportunities to learn and grow.
+                </p>
+                <p class="about-paragraph">
+                    Passionate about learning, problem-solving, and contributing to collaborative development environments. I enjoy collaborating with others to brainstorm innovative solutions and share insights.
+                </p>
+                <div class="about-details">
+                    <div class="detail-item">
+                        <span class="detail-icon"><i class="fas fa-map-marker-alt"></i></span>
+                        <span class="detail-text">Hyderabad, India</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-icon"><i class="fas fa-phone"></i></span>
+                        <span class="detail-text">9867172110</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-icon"><i class="fas fa-envelope"></i></span>
+                        <span class="detail-text">padiadhruval@gmail.com</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <section id="experience" class="section-container">
+        <div class="section-header">
+            <h2 class="section-heading">Experience</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="experience-content">
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class="experience-title-container">
+                        <h3 class="experience-title">Vice President</h3>
+                        <p class="experience-company">Code{X} - The Programming Club</p>
+                    </div>
+                    <div class="experience-duration">June 2024 - Present</div>
+                </div>
+                <div class="experience-location">
+                    <i class="fas fa-map-marker-alt"></i> Woxsen University, Hyderabad
+                </div>
+                <ul class="experience-description">
+                    <li>Managed projects, organized workshops, hackathons, and coding competitions</li>
+                    <li>Oversaw operations, team coordination, and event execution</li>
+                    <li>Fostered innovation and growth within the club community</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-container">
+        <div class="section-header">
+            <h2 class="section-heading">Projects</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="project-grid">
+            <!-- SpeakSync -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">SpeakSync</h3>
+                    <span class="project-badge">Current</span>
+                </div>
+                <p class="project-description">
+                    Real-time speech translation system with synchronized visual cues, enabling seamless multilingual communication for global collaboration.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">NLP</span>
+                    <span class="tech-tag">Web Audio API</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- GitChat -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">GitChat</h3>
+                    <span class="project-badge">Completed</span>
+                </div>
+                <p class="project-description">
+                    Tool integrating GitHub API and OpenAI API for conversational interactions with repositories, streamlining code review and collaboration.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">GitHub API</span>
+                    <span class="tech-tag">OpenAI API</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- DocDialog -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">DocDialog</h3>
+                    <span class="project-badge">Ongoing</span>
+                </div>
+                <p class="project-description">
+                    AI-driven document processing tool for natural language interaction with PDF, CSV, and JSON files, enhancing data analysis and accessibility.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">NLP</span>
+                    <span class="tech-tag">Flask</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- EventNet -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">EventNet</h3>
+                    <span class="project-badge">Completed</span>
+                </div>
+                <p class="project-description">
+                    Secure event networking platform with authentication and MongoDB for user credential management, integrated with LinkedIn profiles for optimal user matching.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">MongoDB</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- WitWeb -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">WitWeb</h3>
+                    <span class="project-badge">Completed</span>
+                </div>
+                <p class="project-description">
+                    NLP-based research tool implementing various models (OpenAI, Llama2, Mistral) for text analysis with web scraping for relevant article retrieval.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">BeautifulSoup</span>
+                    <span class="tech-tag">NLP Models</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- University Event Website -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">University Event Website</h3>
+                    <span class="project-badge">Completed</span>
+                </div>
+                <p class="project-description">
+                    Developed and deployed a website for a university event, handling 700+ registrations with secure authentication and a seamless user experience.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">HTML/CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Firebase</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="skills" class="section-container">
-        <h2 class="section-heading">Skills</h2>
-        <div style="padding: 10px;display: flex;">
-            <div style="width: 250px;">
-                <h3 class="skill-heading">Technologies</h3>
-                <div class="skill">Python</div>
-                <div class="skill">JavaScript</div>
-                <div class="skill">Java</div>
-                <div class="skill">Elixir</div>
-                <div class="skill">NodeJS/ExpressJS</div>
-                <div class="skill">Flask/Django</div>
-                <div class="skill">PyTorch/Tensorflow</div>
-                <div class="skill">Database Management</div>
-                <div class="skill">MongoDB</div>
+        <div class="section-header">
+            <h2 class="section-heading">Skills</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="skills-container">
+            <div class="skills-category">
+                <h3 class="category-title">Programming Languages</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-python"></i></div>
+                        <div class="skill-name">Python</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-js"></i></div>
+                        <div class="skill-name">JavaScript</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-java"></i></div>
+                        <div class="skill-name">Java</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <div class="skill-name">Elixir</div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h3 class="skill-heading">Tools</h3>
-                <div class="skill">AWS</div>
-                <div class="skill">Git & Github</div>
-                <div class="skill">Chrome-DevTools</div>
-                <div class="skill">Bash</div>
-                <div class="skill">VS Code</div>
+            <div class="skills-category">
+                <h3 class="category-title">Frameworks & Libraries</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                        <div class="skill-name">Node.js/Express</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-python"></i></div>
+                        <div class="skill-name">Flask/Django</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                        <div class="skill-name">PyTorch</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                        <div class="skill-name">TensorFlow</div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3 class="category-title">Tools & Technologies</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-aws"></i></div>
+                        <div class="skill-name">AWS</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                        <div class="skill-name">Git & GitHub</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <div class="skill-name">MongoDB</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <div class="skill-name">DBMS</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-linux"></i></div>
+                        <div class="skill-name">Linux</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+                        <div class="skill-name">Bash</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <div class="skill-name">VS Code</div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3 class="category-title">Soft Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-comments"></i></div>
+                        <div class="skill-name">Communication</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-users"></i></div>
+                        <div class="skill-name">Leadership</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-tasks"></i></div>
+                        <div class="skill-name">Management</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
-    <section id="experience-new" class="section-container">
-        <h2 class="section-heading">Projects</h2>
-        <div class="tab-and-content-container">
-            <div class="tab">
-                <button class="tab-links" onclick="openTab(event, 'Tab1')" id="defaultOpen">SpeakSync</button>
-                <button class="tab-links" onclick="openTab(event, 'Tab2')">GitChat</button>
-                <button class="tab-links" onclick="openTab(event, 'Tab3')">DocDialog</button>
-                <button class="tab-links" onclick="openTab(event, 'Tab4')">EventNet</button>
-                <button class="tab-links" onclick="openTab(event, 'Tab5')">WitWeb</button>
-                <button class="tab-links" onclick="openTab(event, 'Tab6')">InsureIt</button>
-            </div>
-            
-            <div class="tab-content-wrapper">
-                <!-- SpeakSync -->
-                <div id="Tab1" class="tab-content">
-                    <div>
-                        <p class="designation"><span class="section-item-name job-company">SpeakSync</span></p>
-                        <div class="job-duration">Current Project</div>                
-                    </div>
-                    <br>
-                    <ul class="section-item-description">
-                        <li>Offers real-time speech translation for multilingual meetings, enhancing global collaboration and communication.</li>
-                        <li>Innovative technology that translates spoken language in real-time and synchronizes it with visual cues such as lip movements for seamless interactions.</li>
-                        <li>Provides an intuitive and natural communication experience across different languages, making international meetings more efficient and inclusive.</li>
-                    </ul>
-                </div>
-            
-                <!-- GitChat -->
-                <div id="Tab2" class="tab-content">
-                    <div>
-                        <p class="designation"><span class="section-item-name job-company">GitChat</span></p>
-                        <div class="job-duration">Past Project</div>                
-                    </div>
-                    <br>
-                    <ul class="section-item-description">
-                        <li>Utilizes GitHub API and OpenAI API to enable users to interact conversationally with their GitHub repositories.</li>
-                        <li>Provides developers with insights and answers about their codebases, enhancing understanding and collaboration.</li>
-                        <li>Facilitates natural language queries to streamline the code review process and improve developer productivity.</li>
-                    </ul>
-                </div>
-            
-                <!-- DocDialog -->
-                <div id="Tab3" class="tab-content">
-                    <div>
-                        <p class="designation"><span class="section-item-name job-company">DocDialog</span></p>
-                        <div class="job-duration">Ongoing Project</div>                
-                    </div>
-                    <br>
-                    <ul class="section-item-description">
-                        <li>Allows users to upload and interact with PDF, CSV, or JSON documents using natural language.</li>
-                        <li>Leverages advanced AI to perform data analysis tasks, answering user queries about their data and documents.</li>
-                        <li>Improving data analysis capabilities and expanding functionality for more complex document interactions.</li>
-                    </ul>
-                </div>
-            
-                <!-- EventNet -->
-                <div id="Tab4" class="tab-content">
-                    <div>
-                        <p class="designation"><span class="section-item-name job-company">EventNet</span></p>
-                        <div class="job-duration">Past Project</div>                
-                    </div>
-                    <br>
-                    <ul class="section-item-description">
-                        <li>Enables networking at events through secure authentication and user-friendly login processes.</li>
-                        <li>Features a MongoDB database to manage user credentials and LinkedIn profile URLs for effective matching.</li>
-                        <li>Employs web scraping to extract keywords from LinkedIn profiles, offering efficient user networking and matching.</li>
-                    </ul>
-                </div>
-            
-                <!-- WitWeb -->
-                <div id="Tab5" class="tab-content">
-                    <div>
-                        <p class="designation"><span class="section-item-name job-company">WitWeb</span></p>
-                        <div class="job-duration">Past Project</div>                
-                    </div>
-                    <br>
-                    <ul class="section-item-description">
-                        <li>Combines advanced NLP models such as OpenAI, Llama2, and Mistral for text analysis and similarity checking.</li>
-                        <li>Utilizes Beautiful Soup for web scraping to fetch and filter relevant research papers based on user topics.</li>
-                        <li>Employs a similarity algorithm to identify and present the most relevant and high-quality articles to users.</li>
-                    </ul>
-                </div>
-            
-                <!-- InsureIt -->
-                <div id="Tab6" class="tab-content">
-                    <div>
-                        <p class="designation"><span class="section-item-name job-company">InsureIt</span></p>
-                        <div class="job-duration">Past Project</div>                
-                    </div>
-                    <br>
-                    <ul class="section-item-description">
-                        <li>Incorporates advanced machine learning algorithms to predict the ideal insurance policies for users based on their age, history, and habits.</li>
-                        <li>Uses MongoDB to manage and store a comprehensive database of available insurance plans for efficient access and analysis.</li>
-                        <li>Tailors insurance plan recommendations to each user's unique profile to help them avoid overpaying and choose the most cost-effective options.</li>
-                    </ul>
-                </div>                
-            </div>
-    </section>
-    
-
 
     <section id="education" class="section-container">
-        <h2 class="section-heading">Education</h2>
-        <div style="padding: 20px 10px;">
-            <div class="section-item-header">
-                <h3 class="section-item-name">B.Tech in Computer Science & Engineering</h3>
-                <div>2026</div>
+        <div class="section-header">
+            <h2 class="section-heading">Education</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="education-content">
+            <div class="education-card">
+                <div class="education-header">
+                    <div class="education-degree">
+                        <h3 class="education-title">Bachelor of Technology</h3>
+                        <p class="education-major">Computer Science and Engineering</p>
+                    </div>
+                    <div class="education-duration">2022 - 2026</div>
+                </div>
+                <div class="education-institution">
+                    <i class="fas fa-university"></i> Woxsen University, Hyderabad
+                </div>
             </div>
-            <p class="designation">Woxsen University, Hyderabad</p>
         </div>
     </section>
-    
+
+    <section id="achievements" class="section-container">
+        <div class="section-header">
+            <h2 class="section-heading">Achievements</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="achievements-content">
+            <div class="achievement-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <div class="achievement-info">
+                    <h3 class="achievement-title">1st Runner-Up at Innoverse-12</h3>
+                    <p class="achievement-description">
+                        Won ₹15,000 for developing a meeting assistant with transcription, speaker diarization, action item extraction, summarization, sentiment analysis, and a productivity dashboard.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
-        <p class="developer-credit">❤️</p>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p class="footer-text">© 2025 Dhruval Padia. All Rights Reserved.</p>
+            </div>
+            <div class="footer-social">
+                <a href="mailto:padiadhruval@gmail.com" class="footer-icon"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/dhruvalpadia/" target="_blank" rel="noopener noreferrer" class="footer-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/dhruval30" target="_blank" rel="noopener noreferrer" class="footer-icon"><i class="fab fa-github"></i></a>
+                <a href="https://dhruvalpadia.site" target="_blank" rel="noopener noreferrer" class="footer-icon"><i class="fas fa-globe"></i></a>
+            </div>
+        </div>
     </footer>
 
     <script src="index.js"></script>
